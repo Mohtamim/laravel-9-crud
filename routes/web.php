@@ -14,6 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::resource('students', StudentController::class);
-Route::get('', function () {
-    return view('students');
-});
+Route::get('/',[StudentController::class, 'index']);
