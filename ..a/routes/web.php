@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::resource('students', StudentController::class);
-Route::get('', function () {
-    return view('students');
+
+Route::get('/', function () {
+    return view('welcome');
 });
